@@ -31,4 +31,3 @@ class RegisterCoursesCSVDataTests(unittest.TestCase):
         result = self.courses.verify_enroll_failed()
         self.cp.mark_final("test_invalidEnrollment", result,
                            "Enrollment failed verification")
-

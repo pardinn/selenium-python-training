@@ -2,6 +2,7 @@ import pytest
 from base.webdriver_factory import WebDriverFactory
 from pages.home.login_page import LoginPage
 
+
 @pytest.fixture()
 def setUp(oneTimeSetUp):
     print("Running method level setUp")

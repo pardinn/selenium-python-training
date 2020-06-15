@@ -1,6 +1,7 @@
 import unittest
 from tests.home.login_tests import LoginTests
-from tests.courses.register_courses_csv_data_tests import RegisterCoursesCSVDataTests
+from tests.courses.register_courses_csv_data_tests import \
+    RegisterCoursesCSVDataTests
 
 # Get all tests from the test classes
 tc1 = unittest.TestLoader().loadTestsFromTestCase(LoginTests)

@@ -1,5 +1,3 @@
-import pdb
-import time
 import logging
 import utilities.custom_logger as cl
 from base.base_page import BasePage
