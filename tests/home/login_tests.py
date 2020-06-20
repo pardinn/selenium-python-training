@@ -2,10 +2,13 @@ from pages.home.login_page import LoginPage
 from utilities.checkpoint import CheckPoint
 import unittest
 import pytest
+import utilities.custom_logger as cl
+import logging
 
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
 class LoginTests(unittest.TestCase):
+    log = cl.custom_logger(logging.DEBUG)
 
     @pytest.fixture(autouse=True)
     def class_setup(self, oneTimeSetUp):
