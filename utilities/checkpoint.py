@@ -6,6 +6,7 @@ It provides functionality to assert the result of the test execution
 Example:
     self.verification.mark_final("Test Name", result, "Message")
 """
+from traceback import print_stack
 from base.selenium_driver import SeleniumDriver
 import utilities.custom_logger as cl
 import logging
@@ -34,6 +35,7 @@ class CheckPoint(SeleniumDriver):
                 self.result_list.append("FAIL")
                 self.log.error("# VERIFICATION FAILED : " + result_message)
                 self.take_screenshot(result_message)
+                print_stack()
 
         except:
             self.result_list.append("FAIL")
