@@ -7,7 +7,7 @@ import logging
 
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
-class LoginTests(unittest.TestCase):
+class TestLogin(unittest.TestCase):
     log = cl.custom_logger(logging.DEBUG)
 
     @pytest.fixture(autouse=True)

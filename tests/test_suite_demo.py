@@ -1,11 +1,11 @@
 import unittest
-from tests.home.login_tests import LoginTests
-from tests.courses.register_courses_csv_data_tests import \
-    RegisterCoursesCSVDataTests
+from tests.home.test_login import TestLogin
+from tests.courses.test_register_courses_csv_data import \
+    TestRegisterCoursesCSVData
 
 # Get all tests from the test classes
-tc1 = unittest.TestLoader().loadTestsFromTestCase(LoginTests)
-tc2 = unittest.TestLoader().loadTestsFromTestCase(RegisterCoursesCSVDataTests)
+tc1 = unittest.TestLoader().loadTestsFromTestCase(TestLogin)
+tc2 = unittest.TestLoader().loadTestsFromTestCase(TestRegisterCoursesCSVData)
 
 # Create a test suite combining all test classes
 smoke_test = unittest.TestSuite([tc1, tc2])
